@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<script type="text/javascript">
+window.onload=function(){
+	var view=document.getElementById("show");
+	view.onclick=function(){
+		var pw = document.getElementById("pw");
+		if(view.checked){
+			pw.type="text";
+		}else{
+			pw.type="password";
+		}
+	}
+}
+</script>
+</head>
+<body>
+<h1>登录</h1>
+<form action="login" method="get">
+	username:<input type="text" name="name"/><br/>
+	password:<input type="password" name="pw" id="pw"/><br/>
+	显示密码:<input type="checkbox" id="show"/><br/>
+	<input type="submit" value="login"/>
+</form>
+</body>
+</html>
