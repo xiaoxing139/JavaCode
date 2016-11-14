@@ -3,9 +3,20 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
     "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-	<package name="action" extends="struts-default">
-		<action name="login" class="com.struts2.action.loginAction">
-			<result name="success">/WEB-INF/jsp/welcom.jsp</result>
+	<!-- constant 配置Struts2的属性 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.reload" value="true" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+
+	<package name="action" namespace="/login" extends="struts-default">
+		<default-action-ref name="default"></default-action-ref>
+		<action name="*" class="com.struts2.action.loginAction" method="{1}">
+			<result name="login">/WEB-INF/jsp/welcom.jsp</result>
+			<result name="logout" type="redirect">/login.html</result>
+		</action>
+		<action name="default" class="com.struts2.action.Default">
+			<result name="success">/WEB-INF/jsp/default.jsp</result>
 		</action>
 	</package>
 </struts>
