@@ -3,11 +3,25 @@
   <display-name>struts2test1</display-name>
   
   <filter>
-  	<filter-name>DispatcherFilter</filter-name>
+  	<filter-name>URIEncodeFilter</filter-name>
+  	<filter-class>com.struts2.filter.URIEncodeFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>URIEncodeFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+  	<filter-name>FilterDispatcher</filter-name>
   	<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
   </filter>
   <filter-mapping>
-  	<filter-name>DispatcherFilter</filter-name>
+  	<filter-name>FilterDispatcher</filter-name>
   	<url-pattern>/*</url-pattern>
   </filter-mapping>
+  
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list> 	
+  
 </web-app>

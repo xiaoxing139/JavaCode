@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -28,7 +29,11 @@
 </script>
 </head>
 <body>
-Welcom!欢迎<%=request.getSession().getAttribute("uname") %>进入系统。<br/>
+Welcom!欢迎
+<%-- <%=request.getSession().getAttribute("uname") %> --%>
+<s:property value="user.name"/>
+<s:property value="#session.uname"/>
+进入系统。<br/>
 登录成功<br/>
 <form action="login/logout.action" method="post">
 	<input type="submit" value="退出"/>
