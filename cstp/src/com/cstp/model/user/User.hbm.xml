@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.cstp.model.user.User" table="tb_user">
+		<id name="id">
+			<generator class="native"/>
+		</id>
+		<property name="email" not-null="true" unique-key="true"/>
+		<property name="nickname"/>
+		<property name="password" not-null="true" length="50"/>
+		<property name="sex"/>
+		<property name="birthday"/>
+		<property name="phone" not-null="true"/>
+		<property name="idcard"/>
+		<set name="addressList" table="tb_address">
+			<key column="tb_user_id"></key>
+			<element column="address" type="string"></element>
+		</set>
+		<property name="account"/>
+	</class>
+</hibernate-mapping>

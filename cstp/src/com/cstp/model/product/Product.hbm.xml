@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.cstp.model.product.Product" table="tb_product">
+		<id name="id">
+			<generator class="native"/>
+		</id>
+		<property name="identifier" not-null="true" unique-key=""/>
+		<property name="name" not-null="true"/>
+		<property name="price" not-null="true"/>
+		<property name="inventory" not-null="true"/>
+		<property name="imgPath" not-null="true"/>
+		<many-to-one name="pCategory" not-null="true" class="com.cstp.model.product.Category"/>
+		<property name="state"/>
+		<many-to-one name="owner" class="com.cstp.model.user.User"/>
+	</class>
+</hibernate-mapping>

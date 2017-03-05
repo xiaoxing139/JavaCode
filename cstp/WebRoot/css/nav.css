@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document 左侧菜单*/
+.b_left {
+	width: 25%;
+	float: left;
+	background-color: #CFC;
+}
+
+.nav {
+	text-align: center;
+	font-size: 18px;
+	width: 90%;
+	margin: 0px auto;
+	height: auto; /*此div必须有height属性，否则无法显示列表项div*/
+}
+
+.nav dl dd,dt {
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	position: relative;
+}
+
+#list {
+	position: absolute;
+	float: left;
+	right: -200px;
+	top: 0px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 200px;
+	overflow: hidden;
+	display: none;
+}
+
+#list li {
+	list-style-type: none;
+	margin: 10px;
+	float: left;
+}
+
+.nav dd:hover #list {
+	display: block;
+}
+
+.nav dd:hover {
+	background-color: white;
+}
+
+.ad {
+	width: 100%;
+	overflow: hidden;
+	border: 1px dashed #000;
+	background-color: #FFF;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+#adv {
+	background-image: url(../img/586b95c2N4948660d.jpg);
+	background-size: 100% 160px;
+	width: 98%;
+	height: 160px;
+	text-align: center;
+	margin: 10px auto 2px;
+	position: relative;
+	animation: mymove 3s infinite;
+	-moz-animation: mymove 3s infinite; /* Firefox */
+	-webkit-animation: mymove 3s infinite; /* Safari and Chrome */
+	-o-animation: mymove 3s infinite; /* Opera */
+}
+
+@
+keyframes mymove { 0% {
+	top: 0px;
+}
+
+20%
+{
+top
+:
+80px;
+}
+40%
+{
+top
+:
+160px;
+}
+60%
+{
+top
+:
+-160px;
+}
+80%
+{
+top
+:
+-80px;
+}
+100%
+{
+top
+:
+0px;
+}
+}
+@
+-moz-keyframes mymove /* Firefox */ { 0% {
+	top: 0px;
+}
+
+20%
+{
+top
+:
+80px;
+}
+40%
+{
+top
+:
+160px;
+}
+60%
+{
+top
+:
+-160px;
+}
+80%
+{
+top
+:
+-80px;
+}
+100%
+{
+top
+:
+0px;
+}
+}
+@
+-webkit-keyframes mymove /* Safari 和 Chrome */ { 0% {
+	top: 0px;
+}
+
+20%
+{
+top
+:
+80px;
+}
+40%
+{
+top
+:
+160px;
+}
+60%
+{
+top
+:
+-160px;
+}
+80%
+{
+top
+:
+-80px;
+}
+100%
+{
+top
+:
+0px;
+}
+}
+@
+-o-keyframes mymove /* Opera */ { 0% {
+	top: 0px;
+}
+
+20%
+{
+top
+:
+80px;
+}
+40%
+{
+top
+:
+160px;
+}
+60%
+{
+top
+:
+-160px;
+}
+80%
+{
+top
+:
+-80px;
+}
+100%
+{
+top
+:
+0px;
+}
+}
+#adv ul {
+	display: none;
+}
+
+#adv p {
+	position: absolute;
+	top: 130px;
+	font-weight: bold;
+}
+
+#adv p a {
+	color: #006;
+}

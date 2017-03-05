@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document 管理员页面样式*/
+*{
+	padding:0px;
+	margin:0px;
+	font-family:"微软雅黑","宋体","楷体";
+	font-size:16px;
+	}
+a{
+	text-decoration:none;
+	}
+a:hover{ 
+	color:#F60;
+	}
+
+/*header*/
+.header{
+	width:90%;
+	overflow:hidden;
+	margin:10px auto;
+	text-align:center;
+	}
+.header .title{
+	width:100%;
+	overflow:hidden;
+	text-align:right;
+	}
+.header div h1{
+	width:100%;
+	font-size:40px;
+	color:#F30;
+	}
+.line{
+	width:100%;
+	height:30px;
+	background-color:#F30;
+	}
+	
+	
+/*bd_left*/
+.bd{
+	width:100%;
+	overflow:hidden;
+	}
+.bd .bd_left{
+	width:23%;
+	height:410px;
+	text-align:center;
+	float:left;
+	margin-right:30px;
+	}
+.bd .bd_left ul li{
+	width:100%;
+	list-style-type:none;
+	}
+.bd .bd_left ul li p{
+	border:1px solid #000;
+	font-size:18px;
+	height:40px;
+	line-height:40px;
+	background-color:#C9F;
+	}
+.bd .bd_left .detail{
+	background-color:#CCC;
+	display:none;
+	}
+.detail li{
+	height:30px;
+	line-height:30px;
+	}
+.bd .bd_left ul li:hover ul{
+	display:block;
+	}
+	
+	
+	
+/*bd_right*/
+.bd .bd_right{
+	width:65%;
+	overflow:hidden;
+	float:left;
+	}
+.bd_right .path{
+	margin-top:15px;
+	margin-bottom:5px;
+	}
+.bd_right hr{
+	margin-bottom:10px;
+	}
+	
+/*footer*/
+.footer{
+	text-align:center;
+	width:100%; 
+	background-color:#333;
+	padding-top:35px;
+	padding-bottom:37px;
+	}
+.footer ul{
+	width:100%;
+	text-align:center;
+	margin-bottom:25px;
+	}
+.footer ul li{
+	list-style-type:none;
+	margin:10px;
+	display:inline;
+	}
+.footer ul li a{
+	color:#000;
+	}
+.footer ul li a:hover{
+	color:#F60;
+	}

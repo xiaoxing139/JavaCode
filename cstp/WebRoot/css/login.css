@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document 登录框样式*/
+#bodyy {
+	width: 100%;
+	overflow: hidden;
+}
+
+.box {
+	width: 40%;
+	text-align: center;
+	background-color: #CF9;
+	overflow: hidden;
+	margin: 50px auto;
+	border-radius: 10px;
+}
+
+.box .text {
+	clear: both;
+	margin: 30px auto;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-left: 20px;
+}
+
+.box .text .t_key {
+	width: 15%;
+}
+
+.box .text .t_value {
+	width: 70%;
+}
+
+.box .text .t_value input {
+	width: 80%;
+	height: 20px;
+}
+
+.box .text div {
+	float: left;
+}
+
+.box .button {
+	width: 80%;
+	text-align: center;
+}
+
+.box .button input {
+	width: 25%;
+	margin: 0px auto;
+	border: 1px #FF0000 solid;
+	border-radius: 5px;
+}
+
+.find {
+	clear: both;
+	width: 80%;
+	text-align: center;
+	margin: 20px auto;
+}

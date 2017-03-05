@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document 基本信息*/
+.box {
+	width: 60%;
+	background-color: #0FF;
+	float: left;
+	margin: 30px auto 20px 20px;
+	padding-top: 20px;
+}
+
+.box h3 {
+	margin-left: 20px;
+}
+
+.box ul li {
+	clear: both;
+	width: 80%;
+	height: 35px;
+	line-height: 35px;
+	list-style-type: none;
+	text-align: center;
+	margin: 20px auto;
+}
+
+.box ul li div {
+	float: left;
+}
+
+.box ul li .t_key {
+	width: 20%;
+}
+
+.box ul li .t_value {
+	width: 60%;
+	text-align: left;
+}
+
+.box ul li .t_value input {
+	width: 50%;
+}
+
+.box ul li .butt {
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+.box ul li .butt input {
+	width: 50%;
+	border: 1px #FF0000 solid;
+	border-radius: 5px;
+}

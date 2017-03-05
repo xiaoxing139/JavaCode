@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="购物，二手交易">
+<meta name="Description" content="这是一个提供二手交易的网站">
+<title>注册</title>
+<link href="css/basestyle.css" rel="stylesheet" type="text/css">
+<link href="css/registe.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/messages_zh.js"></script>
+<script type="text/javascript">
+	$(function(){
+		alert("nnn");
+		$.validator.addMethod("phoneNumber",function(value,element){
+			var regex = /^1{1}[0-9]{10}$/;
+			return this.optional(element)||regex.test(value);
+		},"请输入正确的号码");
+		
+		var validator = $("#registform").validate({
+			submitHandler:function(form){
+				alert("提交");
+				form.submit();
+			},
+			rules:{
+				email:{
+					required:true,
+					email:true
+				},
+				nickname:{
+					rangelength:[1,5]
+				},
+				password:{
+					required:true
+				},
+				confirm_pwd:{
+					required:true,
+					equalTo:"#password"
+				},
+				phone:{
+					required:true,
+					phoneNumber:true
+				},
+				birthday:{
+					date:true
+				}
+			},
+			messages:{
+				email:{
+					required:"必填"
+				},
+				nickname:{
+					rangelength:"长度1-5"
+				},
+				password:{
+					required:"必填"
+				},
+				confirm_pwd:{
+					required:"必填",
+					equalTo:"与输入的密码不一致"
+				},
+				phone:{
+					required:"必填"
+				},
+				birthday:{
+					date:"输入正确的日期!"
+				}
+			}
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="header">
+		<div class="logo">
+			<img src="img/logo.jpg" />
+		</div>
+		<div class="title">
+			<div class="top">
+				<p>校园二手交易网</p>
+			</div>
+			<div class="bottom">
+				<div class="search">
+					<input type="text" placeholder="请输入关键字" />
+				</div>
+				<div class="search">
+					<a href="#">搜索</a>
+				</div>
+			</div>
+		</div>
+		<div class="user">
+			<p>
+				<a href="login.html">登录</a>/<a href="register.html">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;Hi!欢迎来访
+			</p>
+		</div>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">热销商品</a></li>
+			<li><a href="#">推荐商品</a></li>
+			<li><a href="#">新品</a></li>
+		</ul>
+	</div>
+	<div id="bodyy">
+		<div class="box">
+			<form id="registform" action="user/user_register.action" method="post">
+				<h2>注&emsp;&emsp;册</h2>
+				<div class="text">
+					<div class="t_key">邮&ensp;&emsp;箱:</div>
+					<div class="t_value">
+						<input type="email" id="email" name="email"/><span>*</span>
+					</div>
+				</div>
+				<div class="text">
+					<div class="t_key">昵&ensp;&emsp;称</div>
+					<div class="t_value">
+						<input type="text" id="nickname" name="nickname"/>
+					</div>
+				</div>
+				<div class="text">
+					<div class="t_key">密&ensp;&emsp;码:</div>
+					<div class="t_value">
+						<input type="password" id="password" name="password"/><span>*</span>
+					</div>
+				</div>
+				<div class="text">
+					<div class="t_key">再次输入密码:</div>
+					<div class="t_value">
+						<input type="password" id="confirm_pwd" name="confirm_pwd"/><span>*</span>
+					</div>
+				</div>
+				<div class="text">
+					<div class="t_key">性&ensp;&emsp;别</div>
+					<div class="t_value">
+						<select id="sex" name="sex">
+							<option value="男" selected="">男</option>
+							<option value="女">女</option>
+						</select>
+					</div>
+				</div>
+				<div class="text">
+					<div class="t_key">电话号码</div>
+					<div class="t_value">
+						<input type="tel" id="phone" name="phone"/><span>*</span>
+					</div>
+				</div>
+				<div class="text">
+					<div class="t_key">身份证</div>
+					<div class="t_value">
+						<input type="text" id="idcard" name="idcard"/>
+					</div>
+				</div>
+				<div class="text">
+					<div class="t_key">出生日期</div>
+					<div class="t_value">
+						<input type="date" id="birthday" name="birthday"/>
+					</div>
+				</div>
+				<div class="button">
+					<input type="submit" value="提交" /> <input type="reset" value="重置" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="f_left">
+			<ul>
+				<li><a href="#">关于我们</a></li>
+				<li>|</li>
+				<li><a href="#">联系客服</a></li>
+				<li>|</li>
+				<li><a href="#">帮助中心</a></li>
+				<li>|</li>
+				<li><a href="#">免责声明</a></li>
+			</ul>
+			<ul>
+				<li><i>友情链接：</i></li>
+				<li><a href="#">西邮</a></li>
+				<li>|</li>
+				<li><a href="#">淘宝</a></li>
+				<li>|</li>
+				<li><a href="#">天猫</a></li>
+			</ul>
+			<p>Copyright © 西安邮电大学 2011-2016 中国西安长安南路563号 陕ICP备040096号</p>
+		</div>
+		<div class="f_right">
+			<p>手机客户端下载</p>
+			<img src="img/c8177f3e6709c93d955ae25f9f3df8dcd00054ea.png">
+		</div>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user" namespace="/user" extends="base">
+		<action name="user_*" class="com.cstp.action.user.UserAction" method="{1}">
+			<result name="inform">/WEB-INF/jsp/user/inform.jsp</result>
+			<result name="find" type="redirect">user_find.action</result>
+			<interceptor-ref name="LoginInterceptor"/>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document 购物车*/
+.box {
+	float: left;
+	width: 60%;
+	overflow: hidden;
+	margin: 20px auto 20px 50px;
+	text-align: center;
+}
+
+.box h3 {
+	text-align: left;
+	margin: 20px auto;
+}
+
+.box table {
+	border: 1px solid #CCC;
+	width: 90%;
+}
+
+.box table tr th {
+	height: 40px;
+	background-color: #666;
+	color: white;
+}
+
+.box table tr td {
+	height: 30px;
+}
+
+.box table tr td input {
+	width: 20%;
+	height: 25px;
+}
+
+.box .pay {
+	text-align: right;
+	font-size: 17px;
+	margin: 20px 60px 0px auto;
+}

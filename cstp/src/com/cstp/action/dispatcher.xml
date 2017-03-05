@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="controller" namespace="/controller" extends="base">
+		<action name="disp_*" class="com.cstp.action.DispatcherAction" method="{1}">
+			<result name="admin">/WEB-INF/pages/admin.html</result>
+			<result name="home">/WEB-INF/jsp/controller/home.jsp</result>
+		</action>
+		<action name="manager_*" class="com.cstp.action.ManagerAction" method="{1}">
+			<result name="success">/WEB-INF/jsp/controller/home.jsp</result>
+			<result name="false">/WEB-INF/jsp/controller/login.jsp</result>
+			<interceptor-ref name="LoginInterceptor"/>
+		</action>
+	</package>
+</struts>

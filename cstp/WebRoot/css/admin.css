@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document admin样式*/
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "微软雅黑", "楷体", "宋体";
+}
+
+.title {
+	height: 50px;
+	width: 100%;
+	font-size: 40px;
+	color: #603;
+	text-align: center;
+	margin: 30px auto;
+}
+
+.box {
+	width: 450px;
+	overflow: hidden;
+	margin: 0px auto;
+	background-color: #CF9;
+	text-align: center;
+	border-radius: 7px;
+	padding: 20px;
+}
+
+.box h3 {
+	font-family: "隶书";
+	font-size: 40px;
+}
+
+.box .error{
+	color:red;
+	font-size:14px;
+}
+	
+.box .text {
+	margin: 10px auto;
+}
+
+.box .text input {
+	width: 200px;
+	height: 30px;
+}
+
+.box .button {
+	margin-top: 20px;
+}
+
+.box .button input {
+	width: 80px;
+	height: 30px;
+	border: 1px #000000 solid;
+	border-radius: 5px;
+}
+
+.box .button input:hover {
+	color: #FF0000;
+}

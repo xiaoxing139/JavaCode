@@ -9,7 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-public class URIEncodeFilter implements Filter{
+public class URLEncodeFilter implements Filter{
 
 	@Override
 	public void init(FilterConfig arg0) throws ServletException {

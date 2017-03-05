@@ -4,7 +4,7 @@
   
   <filter>
   	<filter-name>URIEncodeFilter</filter-name>
-  	<filter-class>com.struts2.filter.URIEncodeFilter</filter-class>
+  	<filter-class>com.struts2.filter.URLEncodeFilter</filter-class>
   </filter>
   <filter-mapping>
   	<filter-name>URIEncodeFilter</filter-name>

@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document 添加购物车成功*/
+.b_left {
+	width: 50%;
+	height: 300px;
+	margin: 0px auto;
+	text-align: center;
+	line-height: 100px;
+}

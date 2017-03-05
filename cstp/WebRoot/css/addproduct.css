@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document 添加商品样式*/
+.box{
+	width:70%;
+	overflow:hidden;
+	float:left;
+	margin:10px auto 10px 20px;
+	}
+.box hr{
+	margin:10px auto;
+	}
+	
+/*商品表单*/	
+.tb_product{
+	width:80%;
+	overflow:hidden;
+	}
+.tb_product table{
+	text-align:center;
+	width:100%;
+	overflow:hidden;
+	border:#99C 1px solid;
+	border-radius:5px;
+	}
+.tb_product table th{
+	background-color:#9CC;
+	height:30px;
+	}
+.tb_product table th,td{
+	border:1px solid #99C;
+	}
+/*分页*/	
+.page{
+	width:80%;
+	text-align:right;
+	padding:10px;
+	}
+.page a{
+	margin:0px 20px;
+	}
+	
+/*模态框*/		
+.p_modal{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:rgba(51,51,51,0.8);
+	opacity:1;
+	visibility:hidden;
+	}
+.p_modal .bt_close{
+	font-size:60px;
+	margin-right:30px;
+	margin-top:10px;
+	float:right;
+	}
+.p_modal_container{
+	background-color:white;
+	width:500px;
+	overflow:hidden;
+	margin:150px auto;
+	border:1px #666666 solid;
+	border-radius:5px;
+	}
+.p_title{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px solid #666;
+	padding:7px;
+	}
+.p_list{
+	width:98%;
+	height:30px;
+	line-height:30px;
+	padding:5px;
+	}
+.p_key{
+	width:20%;
+	text-align:center;
+	float:left;
+	}
+.p_value{
+	width:65%;
+	float:left;
+	}
+.p_value input{
+	width:97%;
+	height:20px;
+	}
+.p_error{
+	padding:5px;
+	color:#F00;
+	font-size:14px;
+	}
+	
+.p_bt_sub{
+	width:98%;
+	text-align:center;
+	padding:5px;
+	}
+.p_bt_sub input{
+	width:14%;
+	border-radius:5px;
+	margin:5px 20px;
+	padding:0px;
+	}
+.p_bt_sub input:hover{
+	color:#F30;
+	cursor:pointer;
+	}

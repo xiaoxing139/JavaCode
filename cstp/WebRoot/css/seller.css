@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document 卖家信息*/
+.b_left {
+	width: 25%;
+	float: left;
+	background-color: #CFC;
+	overflow: hidden;
+}
+/*卖家部分*/
+.seller {
+	width: 90%;
+	overflow: hidden;
+	text-align: center;
+	margin: 30px auto;
+}
+
+.seller img {
+	width: 50%;
+	height: 160px;
+	border: 1px #333333 solid;
+	border-radius: 50%;
+}
+
+.seller div p {
+	margin-top: 10px;
+}
+/*广告部分*/
+.ad {
+	width: 100%;
+	overflow: hidden;
+	border: 1px dashed #000;
+	background-color: #FFF;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+#adv {
+	background-image: url(../img/586b95c2N4948660d.jpg);
+	background-size: 100% 160px;
+	width: 98%;
+	height: 160px;
+	text-align: center;
+	margin: 10px auto 2px;
+	position: relative;
+	animation: mymove 3s infinite;
+	-moz-animation: mymove 3s infinite; /* Firefox */
+	-webkit-animation: mymove 3s infinite; /* Safari and Chrome */
+	-o-animation: mymove 3s infinite; /* Opera */
+}
+
+@
+keyframes mymove { 0% {
+	top: 0px;
+}
+
+20%
+{
+top
+:
+80px;
+}
+40%
+{
+top
+:
+160px;
+}
+60%
+{
+top
+:
+-160px;
+}
+80%
+{
+top
+:
+-80px;
+}
+100%
+{
+top
+:
+0px;
+}
+}
+@
+-moz-keyframes mymove /* Firefox */ { 0% {
+	top: 0px;
+}
+
+20%
+{
+top
+:
+80px;
+}
+40%
+{
+top
+:
+160px;
+}
+60%
+{
+top
+:
+-160px;
+}
+80%
+{
+top
+:
+-80px;
+}
+100%
+{
+top
+:
+0px;
+}
+}
+@
+-webkit-keyframes mymove /* Safari 和 Chrome */ { 0% {
+	top: 0px;
+}
+
+20%
+{
+top
+:
+80px;
+}
+40%
+{
+top
+:
+160px;
+}
+60%
+{
+top
+:
+-160px;
+}
+80%
+{
+top
+:
+-80px;
+}
+100%
+{
+top
+:
+0px;
+}
+}
+@
+-o-keyframes mymove /* Opera */ { 0% {
+	top: 0px;
+}
+
+20%
+{
+top
+:
+80px;
+}
+40%
+{
+top
+:
+160px;
+}
+60%
+{
+top
+:
+-160px;
+}
+80%
+{
+top
+:
+-80px;
+}
+100%
+{
+top
+:
+0px;
+}
+}
+#adv ul {
+	display: none;
+}
+
+#adv p {
+	position: absolute;
+	top: 130px;
+	font-weight: bold;
+}
+
+#adv p a {
+	color: #006;
+}

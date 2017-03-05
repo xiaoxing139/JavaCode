@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="product" namespace="/product" extends="base">
+		<action name="cate_*" class="com.cstp.action.product.CategoryAction" method="{1}">
+			<result name="category">/WEB-INF/jsp/controller/category.jsp</result>
+			<interceptor-ref name="LoginInterceptor"/>
+		</action>
+		<action name="prod_*" class="com.cstp.action.product.ProductAction" method="{1}">
+			<result name="addproduct">/WEB-INF/jsp/user/addproduct.jsp</result>
+		</action>
+	</package>
+</struts>

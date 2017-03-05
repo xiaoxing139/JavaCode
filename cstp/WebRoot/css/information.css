@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document 个人中心样式*/
+.nav {
+	width: 20%;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+}
+
+.nav ul li {
+	list-style-type: none;
+	border: 1px solid #C00;
+	height: 40px;
+	line-height: 40px;
+	margin: 10px;
+	border-radius: 5px;
+	background-color: #CFF;
+}
